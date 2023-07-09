@@ -5,7 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
-import  Typewriter from "typewriter-effect";
+import Typewriter from "typewriter-effect";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -20,24 +20,22 @@ export default function Greeting(props) {
               </h1>
               <h2 className="greeting-nickname" style={{ color: theme.text }}>
                 <Typewriter
-                 onInit={(typewriter)=>{
-                  typewriter
-
-                  .typeString("Bienvenue dans mon portfolio👋🏼")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString("Je suis un data engineer📊")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("Un data scientist📈")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("Et un developpeur FULL STACK💻")
-                  .start();
-                 }}
-                
+                  options={{
+                    loop: true
+                  }}
+                  onInit={(typewriter) => {
+                    typewriter.typeString("Bienvenue dans mon portfolio👋🏼")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString("Je suis un data engineer📊")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .typeString("Et un développeur FULL STACK💻")
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .start();
+                  }}
                 />
-                {/* ( {greeting.nickname} ) */}
               </h2>
               <p
                 className="greeting-text-p subTitle"

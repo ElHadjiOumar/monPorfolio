@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "ElHadjiOumarMbengue",
   nickname: "Data Engineer / Data Scientist",
   subTitle:
-    "Une personne passionnée qui aime toujours travailler sur des produits de bout en bout et développe des systèmes sociaux et techniques durables et évolutifs dans le but de créer un impact.",
+  "Passionné et engagé, je crée des solutions techniques évolutives de bout en bout, visant à avoir un impact réel et durable. Bienvenue dans mon espace de passion et d'innovation.",
   resumeLink:
     "https://drive.google.com/file/d/15QbrG5KZvTFL4OrCmiGvfExYRTlmvcIu/view?usp=sharing",
   //portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
@@ -87,12 +87,12 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
+      title: "Data Engineer",
       fileName: "DataScienceImg",
       skills: [
-        "⚡ Développement de modèles prêts à la production hautement évolutifs pour divers cas d'utilisation d'apprentissage en profondeur et de statistiques",
-        "⚡ Maîtrise des technologies du Big Data permettant le traitement et la manipulation de données (Hadoop, Spark, Kafka…)",
-        "⚡ Maîtrise des outil de Business Intelligence et Data Visualization ( Power BI et Tableau )",
+        "⚡ Conception de modèles d'apprentissage profond et statistiques hautement évolutifs.",
+        "⚡ Maîtrise d'outils open-source pour l'ingénierie des données, dont DBT, Trino, MinIO, Apache Iceberg, Prefect, Airflow, ClickHouse et Spark. ",
+        "⚡ Maîtrise des outil de Business Intelligence et Data Visualization ( Apache Superset ,Power BI et Tableau )",
       ],
       softwareSkills: [
         {
@@ -104,8 +104,8 @@ const skills = {
           },
         },
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
+          skillName: "DBT",
+          fontAwesomeClassname: "logos:dbt",
           style: {
             backgroundColor: "transparent",
           },
@@ -119,17 +119,19 @@ const skills = {
           },
         },
         {
-          skillName: "Hadoop",
-          fontAwesomeClassname: "logos:hadoop",
+          skillName: "Airbyte",
+          fontAwesomeClassname: "simple-icons:airbyte",
           style: {
             backgroundColor: "transparent",
+            color:"#5c59f7"
           },
         },
         {
-          skillName: "scikit learn",
-          fontAwesomeClassname: "simple-icons:scikitlearn",
+          skillName: "trino",
+          fontAwesomeClassname: "simple-icons:trino",
           style: {
             backgroundColor: "transparent",
+            
           },
         },
         {
@@ -140,18 +142,26 @@ const skills = {
           },
         },
         {
-          skillName: "Anaconda",
-          fontAwesomeClassname: "simple-icons:anaconda",
+          skillName: "Prefect",
+          fontAwesomeClassname: "simple-icons:prefect",
           style: {
             backgroundColor: "transparent",
-            color:"#3FA528"
+            color:"#0f8af7"
           },
         },
         {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
+          skillName: "Airflow",
+          fontAwesomeClassname: "logos:airflow-icon",
           style: {
             backgroundColor: "transparent",
+          },
+        },
+        {
+          skillName: "Clickhouse",
+          fontAwesomeClassname: "simple-icons:clickhouse",
+          style: {
+            backgroundColor: "transparent",
+            color:"#f7c601"
           },
         },
         {
@@ -265,7 +275,7 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Expérience de travail sur plusieurs plateformes cloud",
+        "⚡ Déploiement de plates-formes de données sur Azure, AWS et GCP. ",
         "⚡ Hébergement et maintenance de sites Web sur des instances de machines virtuelles ainsi que l'intégration de bases de données",
         // "⚡ Deploying deep learning models on cloud to use on mobile devices",
         // "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
@@ -633,6 +643,17 @@ const experience = {
       title: "Stages",
       experiences: [
         {
+          title: "Data Engineer",
+          company: "Groupe Onepoint",
+          company_url: "https://www.groupeonepoint.com/fr/",
+          logo_path: "onepoint.png",
+          duration: "Avril 2023 - Octobre 2023",
+          location: "Paris, France",
+          description:
+            "Je travaille chez le groupe OnePoint en tant que Data Engineer dans le cadre de la mise en place d'une Moderne Data Platforme à l'aide d'outils Open Source.",
+          color: "#ee3c26",
+        },
+        {
           title: "Developpeur Full-Stack",
           company: "ITNS",
           company_url: "http://www.itns-tn.com/index.html",
@@ -640,7 +661,7 @@ const experience = {
           duration: "Avril 2022 - Octobre 2022",
           location: "Tunis, Tunisie",
           description:
-            "J'ai travaillé sur un projet de mise en place d'une application mobile de paiements basé sur l'OpenBanking permettant à l'utilisateur de connecter ses banques à l'application afin de pouvoir mieux gerer son argent et pouvoir effectuer des paiements directement depuis l'application. Il y avait deux objectifs : (1) Mettre en place l'OpenBanking pour pouvoir connecter les apis des banques au système (2) Mettre en place la sécurité et permettre à l'utilisateur d'effectuer les actions de lecture des information de son compte et d'effectuer des paiements directement depuis l'application. (3) Mettre en place une deuxième solution de paiement mobile basé sur  le QR Code et les coordonnées du numéro de téléphone. (4) Mettre en place une API basé sur le Bank as a service afin de vendre les fonctionnalités développées dans les parties (1),(2) et (3) à d'autres applications .",
+            "J'ai travaillé sur la mise en place d'une application mobile de paiements basé sur l'OpenBanking permettant à l'utilisateur de connecter ses banques à l'application afin de pouvoir mieux gerer son argent et pouvoir effectuer des paiements directement depuis l'application.",
           color: "#ee3c26",
         },
         // {
@@ -667,11 +688,22 @@ const experience = {
           company_url: "http://www.secusociale.sn/",
           logo_path: "caisse.jpg",
           duration: "Juillet 2020 - Decembre 2020",
-          location: "Travail à la maison",
+          location: "Dakar, Sénégal",
           description:
             "Collaboration avec l'ex directeur de l'IPM de la caisse de sécurité sociale dans le cadre d'un projet de mise en place d'une plateforme web de gestion des prises en charge maladie pour lutter contre les fraudes .",
           color: "#181717",
+        },{
+          title: "Developpeur Full STACK",
+          company: "Medicom Group",
+          company_url: "#",
+          logo_path: "medicom.png",
+          duration: "2020 - En cours",
+          location: "Dakar, Sénégal",
+          description:
+            "je travaille en tant que consultant developpeur full stack pour medicom group dans le cadre de developpement d'application dans le domaine de la santé",
+          color: "#181717",
         },
+        
       ],
     },
   ],
@@ -701,15 +733,13 @@ const contactPageData = {
     // avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
-    title: "Addresse",
+    title: "adresse Mail",
     subtitle:
-      "180 rue de Vaugirard , Paris 75015, France",
-    avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/RF8WxXgYKBKx2eVaA",
+      "elhadjimbengueo@gmail.com"
   },
   phoneSection: {
     title: "Numero de Téléphone",
-    subtitle: "+33 7 51 08 86 73",
+    subtitle: "06 42 80 85 80",
   },
 };
 

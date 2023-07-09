@@ -1,5 +1,5 @@
 const openSource = {
-  githubConvertedToken: "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",
+  githubConvertedToken: "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",
   githubUserName: "ElHadjiOumar",
 };
 
@@ -100,7 +100,7 @@ const query_pinned_projects = {
   query: `
 	query { 
 	  user(login: "${openSource.githubUserName}") { 
-	    pinnedItems(first: 6, types: REPOSITORY) {
+	    pinnedItems(first: 10, types: REPOSITORY) {
 	      totalCount
 	      nodes{
 	        ... on Repository{
@@ -110,7 +110,7 @@ const query_pinned_projects = {
 		          url,
 		          description,
 		          isFork,
-		          languages(first:10){
+		          languages(first:20){
 		            nodes{
 		              name
 		            }
@@ -127,7 +127,7 @@ const baseUrl = "https://api.github.com/graphql";
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization: "bearer " + openSource.githubConvertedToken,
+  "Authorization": "Bearer " + openSource.githubConvertedToken,
 };
 
 fetch(baseUrl, {
@@ -135,6 +135,7 @@ fetch(baseUrl, {
   headers: headers,
   body: JSON.stringify(query_pr),
 })
+
   .then((response) => response.text())
   .then((txt) => {
     const data = JSON.parse(txt);
@@ -255,7 +256,8 @@ const languages_icons = {
   Shell:"vscode-icons:file-type-powershell2",
   "C++":"logos:c-plusplus",
   QMake:"logos:qt",
-  SCSS:"vscode-icons:file-type-scss"
+  SCSS:"vscode-icons:file-type-scss",
+  Dockerfile:"skill-icons:docker"
 };
 
 fetch(baseUrl, {
