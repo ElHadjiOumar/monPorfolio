@@ -331,6 +331,13 @@ const skills = {
           },
         },
         {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "logos:kubernetes",
+          style: {
+            color: "#1488C6",
+          },
+        },
+        {
           skillName: "Heroku",
           fontAwesomeClassname: "simple-icons:heroku",
           style: {
